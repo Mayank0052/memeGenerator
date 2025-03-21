@@ -8,4 +8,8 @@ export default defineConfig({
     port: process.env.PORT || 5173,  // Use the PORT environment variable or default to 5173
     host: true,  // Allow binding to all available network interfaces
   },
+  preview: {
+    host: true,  // Allow preview to be accessed from other machines
+    allowedHosts: ['memegenerator-xf8z.onrender.com'],  // Add your host here
+  },
 })
